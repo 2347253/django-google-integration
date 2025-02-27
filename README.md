@@ -1,4 +1,4 @@
-# Django Google Integration
+  # Django Google Integration
 
 This is a Django-based backend project that integrates:
 - **Google OAuth 2.0** for authentication.
@@ -90,7 +90,7 @@ https://django-google-integration.onrender.com
 
 
 ## 📌 Postman Collection
-- Import the **Postman collection** from [Postman Link](#).
+- Import the **Postman collection** from [Postman Link](https://drive.google.com/file/d/1pPVeV3SJ70U8-G1p5tm7WFtlnLalxjQC/view?usp=drive_link).
 - Ensure your `.env` is set up before testing.
 
 ---
