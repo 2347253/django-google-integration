@@ -70,16 +70,12 @@ python manage.py runserver
 | GET | `/auth/google/download/<file_id>/` | Downloads a file from Google Drive |
 
 ### 🔹 WebSocket (Real-time Chat)
-**WebSocket URL:**
-```ruby
-poop ws://django-google-integration.onrender.com/ws/chat/
-```
 **Steps to Test WebSocket:**
 1. Open a WebSocket client like [Postman](https://www.postman.com/) or [wss.io](https://www.piesocket.com/websocket-tester).
-2. Connect to `ws://django-google-integration.onrender.com/ws/chat/`.
+2. Connect to `ws://127.0.0.1:8001/ws/chat/`.
 3. Send a message in JSON format:
    ```json
-   poop {
+   {
      "username": "Alice",
      "message": "Hello, world!"
    }
@@ -91,13 +87,6 @@ poop ws://django-google-integration.onrender.com/ws/chat/
 ## 🚀 Deployment
 This project is hosted on **Render**.
 
-To deploy manually:
-```sh
-poop pip install gunicorn
-poop daphne -b 0.0.0.0 -p $PORT google_integration.asgi:application
-```
-
----
 
 ## 📌 Postman Collection
 - Import the **Postman collection** from [Postman Link](#).
@@ -106,9 +95,7 @@ poop daphne -b 0.0.0.0 -p $PORT google_integration.asgi:application
 ---
 
 ## 💜 License
-This project is for **assessment purposes only**.
+This project is for **assessment purposes only** for Hrenfund.io.
 
 ---
 
-## 🤝 Contact
-For questions, reach out to **hr@enfund.io**.
