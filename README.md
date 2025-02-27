@@ -23,3 +23,26 @@ This is a Django-based backend project that integrates:
 ```sh
 git clone https://github.com/YOUR_GITHUB_USERNAME/django-google-integration.git
 cd django-google-integration
+```
+### 2️⃣ Create & Activate Virtual Environment
+```sh
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate     # Windows
+```
+
+
+### 3️⃣ Install Dependencies
+```sh
+Copy
+Edit
+pip install -r requirements.txt
+```
+### 4️⃣ Set Up Environment Variables
+Create a .env file in the root directory and add:
+
+```ini
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+GOOGLE_REDIRECT_URI=http://127.0.0.1:8000/auth/google/callback/
+```
