@@ -86,6 +86,7 @@ python manage.py runserver
 
 ## 🚀 Deployment
 This project is hosted on **Render**.
+https://django-google-integration.onrender.com
 
 
 ## 📌 Postman Collection
