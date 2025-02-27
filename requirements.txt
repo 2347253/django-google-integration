@@ -1,0 +1,7 @@
+django
+daphne
+channels
+djangorestframework
+social-auth-app-django
+google-auth
+gunicorn  # For running Django on Render
