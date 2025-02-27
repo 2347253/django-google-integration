@@ -5,3 +5,4 @@ djangorestframework
 social-auth-app-django
 google-auth
 gunicorn  # For running Django on Render
+python-dotenv  
