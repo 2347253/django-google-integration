@@ -88,6 +88,8 @@ python manage.py runserver
 This project is hosted on **Render**.
 https://django-google-integration.onrender.com
 
+## 📽️ Loom Video
+[Video Walkthrough](https://www.loom.com/share/2b5ebf607eec4c349d2e98dede9b637f?sid=72c7b6c7-be44-4192-b2d8-5cebf624aec3)
 
 ## 📌 Postman Collection
 - Import the **Postman collection** from [Postman Link](https://drive.google.com/file/d/1pPVeV3SJ70U8-G1p5tm7WFtlnLalxjQC/view?usp=drive_link).
