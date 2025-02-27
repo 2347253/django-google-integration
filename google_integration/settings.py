@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-38)$v2_$n127n@5t^(#^mg1%et4a*e+s62hf98a@d2v+q%q@uf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://django-google-integration.onrender.com']
+ALLOWED_HOSTS = ['django-google-integration.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
