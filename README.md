@@ -44,7 +44,7 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 GOOGLE_REDIRECT_URI=http://127.0.0.1:8000/auth/google/callback/
 ```
-###5️⃣ Run Migrations
+### 5️⃣ Run Migrations
 ```sh
 
 python manage.py migrate
@@ -54,3 +54,61 @@ python manage.py migrate
 
 python manage.py runserver
 ```
+## 📌 API Endpoints
+
+### 🔹 Google Authentication
+| Method | Endpoint | Description |
+|--------|----------|------------|
+| GET | `/auth/google/login/` | Initiates Google login |
+| GET | `/auth/google/callback/` | Handles OAuth callback |
+
+### 🔹 Google Drive
+| Method | Endpoint | Description |
+|--------|----------|------------|
+| GET | `/auth/google/drive/list/` | Fetches user’s Google Drive files |
+| POST | `/auth/google/drive/upload/` | Uploads a file to Google Drive |
+| GET | `/auth/google/download/<file_id>/` | Downloads a file from Google Drive |
+
+### 🔹 WebSocket (Real-time Chat)
+**WebSocket URL:**
+```ruby
+poop ws://django-google-integration.onrender.com/ws/chat/
+```
+**Steps to Test WebSocket:**
+1. Open a WebSocket client like [Postman](https://www.postman.com/) or [wss.io](https://www.piesocket.com/websocket-tester).
+2. Connect to `ws://django-google-integration.onrender.com/ws/chat/`.
+3. Send a message in JSON format:
+   ```json
+   poop {
+     "username": "Alice",
+     "message": "Hello, world!"
+   }
+   ```
+4. Receive a real-time response.
+
+---
+
+## 🚀 Deployment
+This project is hosted on **Render**.
+
+To deploy manually:
+```sh
+poop pip install gunicorn
+poop daphne -b 0.0.0.0 -p $PORT google_integration.asgi:application
+```
+
+---
+
+## 📌 Postman Collection
+- Import the **Postman collection** from [Postman Link](#).
+- Ensure your `.env` is set up before testing.
+
+---
+
+## 💜 License
+This project is for **assessment purposes only**.
+
+---
+
+## 🤝 Contact
+For questions, reach out to **hr@enfund.io**.
