@@ -34,8 +34,6 @@ venv\Scripts\activate     # Windows
 
 ### 3️⃣ Install Dependencies
 ```sh
-Copy
-Edit
 pip install -r requirements.txt
 ```
 ### 4️⃣ Set Up Environment Variables
@@ -45,4 +43,14 @@ Create a .env file in the root directory and add:
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 GOOGLE_REDIRECT_URI=http://127.0.0.1:8000/auth/google/callback/
+```
+###5️⃣ Run Migrations
+```sh
+
+python manage.py migrate
+```
+### 6️⃣ Run Django Development Server
+```sh
+
+python manage.py runserver
 ```
